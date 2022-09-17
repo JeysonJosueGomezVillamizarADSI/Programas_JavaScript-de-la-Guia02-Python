@@ -1,9 +1,13 @@
-let num = Number (prompt("Digite un numero"));
+let num1 = Number(prompt("Ingrese el primer numero : "));
+let num2 = Number(prompt("Ingrese el segundo numero : "));
+let num3 = Number(prompt("Ingrese el tercer numero : "));
 
-if(num>0 && num<100){
-    document.write("<p class='resultado'>El numero es positivo y menor que 100"+"</p>");
+if(num1>num2 && num1>num3){
+    document.write("El numero mayor es " + num1);
+}else if (num2>num3 && num2>num1){
+    document.write("El numero mayor es "+ num2);
 }
 else{
-    document.write("<p class='resultado'>El numero es negativo"+"</p>");
+    document.write("El numero mayor es " + num3)
 }
 
