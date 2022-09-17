@@ -1,0 +1,14 @@
+*{
+    background-color: beige;
+}
+p{
+    color: rgb(82, 58, 58);
+    text-align: center;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+.resultado{
+    color: rgb(76, 0, 255);
+}
