@@ -1,8 +1,9 @@
-let temp = Number(prompt("Digite la Temperatura"));
-let pres = Number(prompt("Digite la Presión"));
+let pago = Number(prompt("Digite el total a pagar del consumo en el restaurante "));
 
-if(temp>200 || pres>100){
-    alert("!!ALARMA!!")
+if(pago>130000){
+    let descuento = pago*0.10;
+    let totalPagar = pago-descuento;
+    alert("El total a pagar con el descuento incluido es de " +totalPagar);
 }else{
-    alert("Estado Normal")
+    alert("No tiene descuento");
 }
