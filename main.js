@@ -1,18 +1,9 @@
-let opcion = prompt("¿Que figura desea calcular? (Escriba T para Triangulo o C para circulo : )");
+let lado1 = (prompt("Digite el valor del primer lado del rectangulo : "));
+let lado2 = (prompt("Digite el segundo lado del rectangulo : "));
 
-if (opcion == "T") {
-    let base = Number(prompt("Digite la base del triangulo : "));
-    let altura = Number(prompt("Digite la altura del triangulo : "));
-
-    let areaTriangulo = base * altura / 2;
-    alert("El area del triagulo es " + areaTriangulo);
-} else if (opcion == "C") {
-
-    const pi = 3.14
-    let radio = Number(prompt("Digite el radio del circulo : "));
-
-    let areaCirculo=pi*radio*radio;
-    alert("El area del circulo es "+ areaCirculo);
-}  else{
-    alert("Error al digitar ")
+if(lado1>0 && lado2>0){
+    let area = lado1*lado2;
+    document.write("El area del rectagulo es " + area);
+}else{
+    alert("Error algun lado del rectangulo es negativo vuelva a ingresar los datos  ");
 }
