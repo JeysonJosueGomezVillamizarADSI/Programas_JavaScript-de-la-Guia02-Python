@@ -1,17 +1,12 @@
-let num1 = Number (prompt("Escribe el primer numero : "));
-let num2 = Number (prompt("Escribe el segundo numero : "));
-let num3 = Number (prompt("Escribe el tercer numero : "));
-let num4 = Number (prompt("Escribe el cuarto numero : "));
+let producto1=Number(prompt("Escribe el valor del primer producto"));
+let producto2=Number(prompt("Escribe el valor del segundo producto"));
+let producto3=Number(prompt("Escribe el valor del tercer producto"));
+let producto4=Number(prompt("Escribe el valor del cuarto producto"));
+let producto5=Number(prompt("Escribe el valor del quinto producto"));
+let Iva=Number(prompt("Escribe el iva sin %"));
 
-let result1=num1%2;
-let result2=num2%2;
-let result3=num3%2;
-let result4=num4%2;
+let subtotal = producto1+producto2+producto3+producto4+producto5;
+let iva= Iva/100;
+let totalPagar = (subtotal*iva)+subtotal;
 
-if(result1==0 && result2 == 0 && result3 == 0 && result4== 0){
-    let suma= num1+num2+num3+num4
-    alert ("El resultado de la suma es "+ suma);
-}else{
-    mult=num1*num2*num3*num4
-    alert("El resultado de la multiplicacion es " +mult)
-}
+alert ("El subtotal a pagar es " + subtotal + " El iva es " + iva + " El total a pagar es " + totalPagar);
