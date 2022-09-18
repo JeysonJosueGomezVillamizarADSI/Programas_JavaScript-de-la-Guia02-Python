@@ -1,45 +1,18 @@
-let num1 = Number(prompt("Ingrese el primer numero : "));
-let num2 = Number(prompt("Ingrese el segundo numero : "));
-let num3 = Number(prompt("Ingrese el tercer numero : "));
+let opcion = prompt("¿Que figura desea calcular? (Escriba T para Triangulo o C para circulo : )");
 
-if (num1 >= num2 && num1 > num3) {
-    if (num2 > num3) {
-        alert(num1 + 'es el mayor')
-        alert(num3 + 'es el menor');
-    }
-} else if (num3 > num2) {
-    alert(num1 + 'es el mayor')
-    alert(num2 + 'es el menor')
-} else {
-    alert(num1 + 'es el mayor')
-    alert('El segundo y el tercer numero son iguales' + num2)
+if (opcion == "T") {
+    let base = Number(prompt("Digite la base del triangulo : "));
+    let altura = Number(prompt("Digite la altura del triangulo : "));
+
+    let areaTriangulo = base * altura / 2;
+    alert("El area del triagulo es " + areaTriangulo);
+} else if (opcion == "C") {
+
+    const pi = 3.14
+    let radio = Number(prompt("Digite el radio del circulo : "));
+
+    let areaCirculo=pi*radio*radio;
+    alert("El area del circulo es "+ areaCirculo);
+}  else{
+    alert("Error al digitar ")
 }
-
-if (num2 > num1 && num2 >= num3)
-    if (num1 > num3) {
-        alert(num1 + 'es el mayor')
-        print(num3 + 'es el menor')
-    } else if (num3 > num2) {
-        alert(num2 + 'es el mayor')
-        alert(num1 + 'es el menor')
-    } else {
-        alert(num2 + 'es el mayor')
-        alert('El primer y el tercer numero son iguales' + num1)
-    }
-
-if (num3 >= num1 && num3 > num2) {
-    if (num1 > num2) {
-        alert(num3 + 'es el mayor')
-        alert(num2 + 'es el menor')
-    }
-} else if (b > a) {
-    alert(num3 + 'es el mayor')
-    print(num1 + 'es el menor')
-} else {
-    print(c, 'es el mayor')
-    print('El primer y el segundo numero son iguales', a)
-}
-
-
-
-
