@@ -1,9 +1,15 @@
-let pago = Number(prompt("Digite el total a pagar del consumo en el restaurante "));
+const horaPlanta = 20000;
+const horaAdmin = 10000;
 
-if(pago>130000){
-    let descuento = pago*0.10;
-    let totalPagar = pago-descuento;
-    alert("El total a pagar con el descuento incluido es de " +totalPagar);
+let opcion = prompt("Digite la letra P si el empleado es de Planta o  A si es Administrativo : ");
+let horasTrabajadas = Number (prompt("Digite las horas trabajadas del empleado"));
+
+if(opcion == "P"){
+    pagoPlanta=horaPlanta*horasTrabajadas;
+    alert("El total a pagar del empleado de planta es de " + pagoPlanta);
+}else if(opcion == "A"){
+    pagoAdmin = horaAdmin*horasTrabajadas;
+    alert("El total a pagar del empleado administrativo es de " + pagoAdmin)
 }else{
-    alert("No tiene descuento");
+    alert("Error al digitar alguna opcion");
 }
