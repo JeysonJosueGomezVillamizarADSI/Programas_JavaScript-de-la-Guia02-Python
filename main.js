@@ -1,15 +1,17 @@
-const horaPlanta = 20000;
-const horaAdmin = 10000;
+let num1 = Number (prompt("Escribe el primer numero : "));
+let num2 = Number (prompt("Escribe el segundo numero : "));
+let num3 = Number (prompt("Escribe el tercer numero : "));
+let num4 = Number (prompt("Escribe el cuarto numero : "));
 
-let opcion = prompt("Digite la letra P si el empleado es de Planta o  A si es Administrativo : ");
-let horasTrabajadas = Number (prompt("Digite las horas trabajadas del empleado"));
+let result1=num1%2;
+let result2=num2%2;
+let result3=num3%2;
+let result4=num4%2;
 
-if(opcion == "P"){
-    pagoPlanta=horaPlanta*horasTrabajadas;
-    alert("El total a pagar del empleado de planta es de " + pagoPlanta);
-}else if(opcion == "A"){
-    pagoAdmin = horaAdmin*horasTrabajadas;
-    alert("El total a pagar del empleado administrativo es de " + pagoAdmin)
+if(result1==0 && result2 == 0 && result3 == 0 && result4== 0){
+    let suma= num1+num2+num3+num4
+    alert ("El resultado de la suma es "+ suma);
 }else{
-    alert("Error al digitar alguna opcion");
+    mult=num1*num2*num3*num4
+    alert("El resultado de la multiplicacion es " +mult)
 }
