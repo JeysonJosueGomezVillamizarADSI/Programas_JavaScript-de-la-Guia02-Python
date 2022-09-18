@@ -1,9 +1,8 @@
-let lado1 = (prompt("Digite el valor del primer lado del rectangulo : "));
-let lado2 = (prompt("Digite el segundo lado del rectangulo : "));
+let temp = Number(prompt("Digite la Temperatura"));
+let pres = Number(prompt("Digite la Presión"));
 
-if(lado1>0 && lado2>0){
-    let area = lado1*lado2;
-    document.write("El area del rectagulo es " + area);
+if(temp>200 || pres>100){
+    alert("!!ALARMA!!")
 }else{
-    alert("Error algun lado del rectangulo es negativo vuelva a ingresar los datos  ");
+    alert("Estado Normal")
 }
